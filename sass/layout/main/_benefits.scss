@@ -1,0 +1,138 @@
+/********************** our benefits sec 2 **********************/
+
+.benefits {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    // background-color: red;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    // background-color: purple;
+  }
+}
+
+.benefits__item {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 354px;
+    margin-right: 30px;
+    flex-grow: 1;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+   
+      margin-bottom: 30px;
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// .descript .benefits__item {
+//   width: 270px;
+// }
+
+// .benefits__item {
+//   margin-right: 30px;
+// }
+
+// .benefits__item:last-child {
+//   margin-right: 0;
+// }
+
+//
+
+.title-text {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.benefits__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background: var(--sec-backgtound-color);
+  border-radius: 4px;
+}
+
+.benefits__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+.benefits__descript {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--descript-color);
+}
+
+//   //
+// @media screen and (min-width: 1200px) {
+//   body {
+//     background-color: orange;
+//   }
+
+// }
+
+// @media screen and (min-width: 768px) {
+//   // body {
+//   //   background-color: #666999;
+//   // }
+
+//   .benefits {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+
+//   .benefits__item {
+//     width: 354px;
+//     margin-right: 30px;
+//     flex-grow: 1;
+
+//     &:nth-child(2n) {
+//       margin-right: 0;
+//     }
+
+//     &:nth-last-child(-n + 2) {
+//       margin-bottom: 0;
+//     }
+//   }
+// }

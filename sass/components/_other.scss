@@ -1,0 +1,37 @@
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/********************** popular selectors **********************/
+
+.section {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px)  {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.img-item {
+  margin-right: 30px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-item:last-child {
+  margin-right: 0;
+}
+
+/* popular selectors */

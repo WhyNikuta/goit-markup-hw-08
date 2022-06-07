@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+  <!-- <link rel="stylesheet" href="./css/mystyle.css"> -->
+  <link rel="stylesheet" href="./css/main.min.css">
+  <title>Портфолио</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header-flex">
+
+      <nav class="navigation-list">
+
+        <a class="logo" href="#">
+          <span class="logo__accent">Web</span><span class="logo__white">Studio</span>
+        </a>
+
+
+
+      </nav>
+
+
+
+      <!-- button -->
+
+      <button type="button" class="menu-button " aria-expanded="false" aria-controls="menu-container" data-menu-button>
+
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+
+          <use class="icon-cross" href="./images/mobile-menu/symbol-defs.svg#icon-cross"></use>
+          <use class="icon-menu" href="./images/mobile-menu/symbol-defs.svg#icon-menu"></use>
+
+        </svg>
+
+      </button>
+
+      <!-- menu -->
+
+
+      <div class="menu-container " id="menu-container" data-menu>
+
+
+
+        <ul class="navigation navigation--grow">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">Студия</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--active-now" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">Контакты</a>
+          </li>
+        </ul>
+
+
+        <ul class="contact">
+          <li class="contact__item">
+            <a class="contact__link" href="mailto:info@devstudio.com">
+              <svg class="contact__icon" width="16" height="12">
+                <use href="./images/contacts/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contact__item">
+            <a class="contact__link " href="tel:+380961111111">
+              <svg class="contact__icon" width="10" height="16">
+                <use href="./images/contacts/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+
+              <span class="contact__link--number">
+                +380 96 111 11 11
+              </span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="messenger">
+          <li class="messenger__item messenger__item--padding">
+            <a class="messenger__link" href=""></a>Instagram
+          </li>
+          <li class="messenger__item">
+            <a class="messenger__link" href=""></a>Twitter
+          </li>
+          <li class="messenger__item">
+            <a class="messenger__link" href=""></a>Facebook
+          </li>
+          <li class="messenger__item">
+            <a class="messenger__link" href=""></a>LinkedIn
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+
+      <!-- buttons -->
+
+      <div class="container">
+
+        <h2 class="title-third-fourth-sec visually-hidden">Фильтр</h2>
+
+        <!-- filter buttons -->
+        <ul class="port-butt">
+
+          <li class="port-item">
+            <button class="portfolio-button" type="button">Все</button>
+          </li>
+
+          <li class="port-item">
+            <button class="portfolio-button" type="button">Веб-сайты</button>
+          </li>
+
+          <li class="port-item">
+            <button class="portfolio-button" type="button">Приложения</button>
+          </li>
+
+          <li class="port-item">
+            <button class="portfolio-button" type="button">Дизайн</button>
+          </li>
+
+          <li class="port-item">
+            <button class="portfolio-button" type="button">Маркетинг</button>
+          </li>
+
+        </ul>
+
+        <!-- gallery -->
+
+        <ul class="flex-container--portfolio">
+
+
+          <li class="gallery__element">
+
+            <a href="" class="gallery__shadow">
+
+              <div class="gallery__top-wrap">
+
+
+                <picture>
+
+
+                  <!-- desk -->
+                  <source srcset="
+                      ./images/portfolio/desk/techno-duck-desk.jpg    1x,
+                      ./images/portfolio/desk/techno-duck-desk@2x.jpg 2x
+                    " media="(min-width: 1200px)">
+
+                  <!-- tablet -->
+                  <source srcset="
+                     ./images/portfolio/tab/techno-duck-tab.jpg   1x,
+                      ./images/portfolio/tab/techno-duck-tab@2x.jpg 2x
+                    " media="(min-width: 768px)">
+
+                  <!-- mob -->
+                  <source srcset="
+                      ./images/portfolio/mob/techno-duck-mob.jpg    1x,
+                      ./images/portfolio/mob/techno-duck-mob@2x.jpg 2x
+                    " media="(max-width: 767px)">
+
+                  <img class="project__img" src="./images/portfolio/tab/techno-duck-tab.jpg" alt="Технокряк">
+
+                </picture>
+
+                <!-- <img 
+                  srcset="./images/portfolio/techno-duck.jpg 270w, ./images/portfolio/techno-duck-2.jpg 520w"
+                  src="./images/portfolio/techno-duck.jpg" alt="Технокряк"
+                  sizes="(min-width: 1200px) 25vw, (min-width :768px) 50vw, (min-width :480px) 100vw"> -->
+
+
+                <p class="gallery__master-text">
+
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+
+                </p>
+
+              </div>
+              <div class="gallery__text-box">
+
+                <h2 class="gallery__pic-descript">Технокряк</h2>
+                <p class="gallery__under-pic-descript">Веб-сайт</p>
+
+              </div>
+            </a>
+          </li>
+
+          <!-- images/portfolio/new-orlean-vs-golden-star.jpg -->
+          <!-- Постер New Orlean vs Golden Star -->
+          <!-- Дизайн -->
+
+          <li class="gallery__element">
+
+            <a href="" class="gallery__shadow">
+
+              <div class="gallery__top-wrap">
+
+                <picture>
+
+
+                  <!-- desk -->
+                  <source srcset="
+                      ./images/portfolio/desk/new-orlean-vs-golden-star-desk.jpg    1x,
+                      ./images/portfolio/desk/new-orlean-vs-golden-star-desk@2x.jpg 2x
+                    " media="(min-width: 1200px)">
+
+                  <!-- tablet -->
+                  <source srcset="
+                      ./images/portfolio/tab/new-orlean-vs-golden-star-tab.jpg    1x,
+                      ./images/portfolio/tab/new-orlean-vs-golden-star-tab@2x.jpg 2x
+                    " media="(min-width: 768px)">
+
+                  <!-- mob -->
+                  <source srcset="
+                      ./images/portfolio/mob/new-orlean-vs-golden-star-mob.jpg    1x,
+                      ./images/portfolio/mob/new-orlean-vs-golden-star-mob@2x.jpg 2x
+                    " media="(max-width: 767px)">
+
+                  <img class="project__img" src="./images/portfolio/tab/new-orlean-vs-golden-star-tab.jpg"
+                    alt="Технокряк">
+
+                </picture>
+
+
+                <!-- <img
+                  srcset="./images/portfolio/new-orlean-vs-golden-star.jpg 270w, ./images/portfolio/new-orlean-vs-golden-star-2.jpg 520w"
+                  src="./images/portfolio/new-orlean-vs-golden-star.jpg" alt="Технокряк"> -->
+
+                <p class="gallery__master-text">
+
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+
+                </p>
+              </div>
+              <div class="gallery__text-box">
+
+                <h2 class="gallery__pic-descript">Постер New Orlean vs Golden Star</h2>
+                <p class="gallery__under-pic-descript">Дизайн</p>
+
+              </div>
+            </a>
+          </li>
+
+
+          <!-- images/portfolio/seafood.jpg -->
+          <!-- Ресторан Seafood -->
+          <!-- Приложение -->
+
+          <li class="gallery__element">
+
+            <a href="" class="gallery__shadow">
+
+              <div class="gallery__top-wrap">
+
+                <picture>
+
+
+                  <!-- desk -->
+                  <source srcset="
+                      ./images/portfolio/desk/seafood-desk.jpg    1x,
+                      ./images/portfolio/desk/seafood-desk@2x.jpg 2x
+                    " media="(min-width: 1200px)">
+
+                  <!-- tablet -->
+                  <source srcset="
+                      ./images/portfolio/tab/seafood-tab.jpg    1x,
+                      ./images/portfolio/tab/seafood-tab@2x.jpg 2x
+                    " media="(min-width: 768px)">
+
+                  <!-- mob -->
+                  <source srcset="
+                      ./images/portfolio/mob/seafood-mob.jpg    1x,
+                      ./images/portfolio/mob/seafood-mob@2x.jpg 2x
+                    " media="(max-width: 767px)">
+
+                  <img class="project__img" src="./images/portfolio/tab/seafood-tab.jpg" alt="Технокряк">
+
+                </picture>
+
+                <!-- <img srcset="./images/portfolio/seafood.jpg 270w, ./images/portfolio/seafood-2.jpg 520w"
+                  src="images/portfolio/seafood.jpg" alt="Технокряк"> -->
+
+                <p class="gallery__master-text">
+
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+
+                </p>
+              </div>
+              <div class="gallery__text-box">
+
+                <h2 class="gallery__pic-descript">Ресторан Seafood</h2>
+                <p class="gallery__under-pic-descript">Приложение</p>
+
+              </div>
+            </a>
+          </li>
+
+
+          <!-- images/portfolio/prime.jpg -->
+          <!-- Проект Prime -->
+          <!-- Маркетинг -->
+
+          <li class="gallery__element">
+
+            <a href="" class="gallery__shadow">
+
+              <div class="gallery__top-wrap">
+
+
+                <picture>
+
+
+                  <!-- desk -->
+                  <source srcset="
+                      ./images/portfolio/desk/prime-desk.jpg    1x,
+                      ./images/portfolio/desk/prime-desk@2x.jpg 2x
+                    " media="(min-width: 1200px)">
+
+                  <!-- tablet -->
+                  <source srcset="
+                      ./images/portfolio/tab/prime-tab.jpg    1x,
+                      ./images/portfolio/tab/prime-tab@2x.jpg 2x
+                    " media="(min-width: 768px)">
+
+                  <!-- mob -->
+                  <source srcset="
+                      ./images/portfolio/mob/prime-mob.jpg    1x,
+                      ./images/portfolio/mob/prime-mob@2x.jpg 2x
+                    " media="(max-width: 767px)">
+
+                  <img class="project__img" src="./images/portfolio/tab/prime-tab.jpg" alt="Технокряк">
+
+                </picture>
+
+
+                <!-- <img srcset="./images/portfolio/prime.jpg 270w, ./images/portfolio/prime-2.jpg 520w"
+                  src="images/portfolio/prime.jpg" alt="Технокряк"> -->
+
+                <p class="gallery__master-text">
+
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+
+                </p>
+              </div>
+              <div class="gallery__text-box">
+
+                <h2 class="gallery__pic-descript">Проект Prime</h2>
+                <p class="gallery__under-pic-descript">Маркетинг</p>
+
+              </div>
+            </a>
+          </li>
+
+
+          <!-- images/portfolio/boxes.jpg -->
+          <!-- Проект Boxes -->
+          <!-- Приложение -->
+
+          <li class="gallery__element">
+
+            <a href="" class="gallery__shadow">
+
+              <div class="gallery__top-wrap">
+
+
+
+                <picture>
+
+
+                  <!-- desk -->
+                  <source srcset="
+                      ./images/portfolio/desk/boxes-desk.jpg    1x,
+                      ./images/portfolio/desk/boxes-desk@2x.jpg 2x
+                    " media="(min-width: 1200px)">
+
+                  <!-- tablet -->
+                  <source srcset="
+                      ./images/portfolio/tab/boxes-tab.jpg    1x,
+                      ./images/portfolio/tab/boxes-tab@2x.jpg 2x
+                    " media="(min-width: 768px)">
+
+                  <!-- mob -->
+                  <source srcset="
+                      ./images/portfolio/mob/boxes-mob.jpg    1x,
+                      ./images/portfolio/mob/boxes-mob@2x.jpg 2x
+                    " media="(max-width: 767px)">
+
+                  <img class="project__img" src="./images/portfolio/tab/boxes-tab.jpg" alt="Технокряк">
+
+                </picture>
+
+                <!-- <img srcset="./images/portfolio/boxes.jpg 270w, ./images/portfolio/boxes-2.jpg 520w"
+                  src="images/portfolio/boxes.jpg" alt="Технокряк"> -->
+
+                <p class="gallery__master-text">
+
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+
+                </p>
+              </div>
+              <div class="gallery__text-box">
+
+                <h2 class="gallery__pic-descript">Проект Boxes</h2>
+                <p class="gallery__under-pic-descript">Приложение</p>
+
+              </div>
+            </a>
+          </li>
+
+
+          <!-- images/portfolio/inspiration-has-no-borders.jpg -->
+          <!-- Inspiration has no Borders -->
+          <!-- Веб-сайт -->
+
+          <li class="gallery__element">
+
+            <a href="" class="gallery__shadow">
+
+              <div class="gallery__top-wrap">
+
+
+                <picture>
+
+
+                  <!-- desk -->
+                  <source srcset="
+                      ./images/portfolio/desk/inspiration-has-no-borders-desk.jpg    1x,
+                      ./images/portfolio/desk/inspiration-has-no-borders-desk@2x.jpg 2x
+                    " media="(min-width: 1200px)">
+
+                  <!-- tablet -->
+                  <source srcset="
+                      ./images/portfolio/tab/inspiration-has-no-borders-tab.jpg    1x,
+                      ./images/portfolio/tab/inspiration-has-no-borders-tab@2x.jpg 2x
+                    " media="(min-width: 768px)">
+
+                  <!-- mob -->
+                  <source srcset="
+                      ./images/portfolio/mob/inspiration-has-no-borders-mob.jpg    1x,
+                      ./images/portfolio/mob/inspiration-has-no-borders-mob@2x.jpg 2x
+                    " media="(max-width: 767px)">
+
+                  <img class="project__img" src="./images/portfolio/tab/inspiration-has-no-borders-tab.jpg"
+                    alt="Технокряк">
+
+                </picture>
+
+
+
+                <!-- <img
+                  srcset="./images/portfolio/inspiration-has-no-borders.jpg 270w, ./images/portfolio/inspiration-has-no-borders-2.jpg 520w"
+                  src="images/portfolio/inspiration-has-no-borders.jpg" alt="Технокряк"> -->
+
+                <p class="gallery__master-text">
+
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+
+                </p>
+              </div>
+              <div class="gallery__text-box">
+
+                <h2 class="gallery__pic-descript"> Inspiration has no Borders</h2>
+                <p class="gallery__under-pic-descript">Веб-сайт</p>
+
+              </div>
+            </a>
+          </li>
+
+
+          <!-- images/portfolio/limited-edition.jpg -->
+          <!-- Издание Limited Edition -->
+          <!-- Дизайн -->
+
+          <li class="gallery__element">
+
+            <a href="" class="gallery__shadow">
+
+              <div class="gallery__top-wrap">
+
+                <picture>
+
+
+                  <!-- desk -->
+                  <source srcset="
+                      ./images/portfolio/desk/limited-edition-desk.jpg    1x,
+                      ./images/portfolio/desk/limited-edition-desk@2x.jpg 2x
+                    " media="(min-width: 1200px)">
+
+                  <!-- tablet -->
+                  <source srcset="
+                      ./images/portfolio/tab/limited-edition-tab.jpg    1x,
+                      ./images/portfolio/tab/limited-edition-tab@2x.jpg 2x
+                    " media="(min-width: 768px)">
+
+                  <!-- mob -->
+                  <source srcset="
+                      ./images/portfolio/mob/limited-edition-mob.jpg    1x,
+                      ./images/portfolio/mob/limited-edition-mob@2x.jpg 2x
+                    " media="(max-width: 767px)">
+
+                  <img class="project__img" src="./images/portfolio/tab/limited-edition-tab.jpg" alt="Технокряк">
+
+                </picture>
+
+                <!-- <img srcset="./images/portfolio/limited-edition.jpg 270w, ./images/portfolio/limited-edition-2.jpg 520w"
+                  src="images/portfolio/limited-edition.jpg" alt="Технокряк"> -->
+
+                <p class="gallery__master-text">
+
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+
+                </p>
+              </div>
+              <div class="gallery__text-box">
+
+                <h2 class="gallery__pic-descript">Издание Limited Edition</h2>
+                <p class="gallery__under-pic-descript">Дизайн</p>
+
+              </div>
+            </a>
+          </li>
+
+
+          <!-- images/portfolio/lab.jpg -->
+          <!-- Проект LAB -->
+          <!-- Маркетинг -->
+
+          <li class="gallery__element">
+
+            <a href="" class="gallery__shadow">
+
+              <div class="gallery__top-wrap">
+
+                <picture>
+
+
+                  <!-- desk -->
+                  <source srcset="
+                      ./images/portfolio/desk/lab-desk.jpg    1x,
+                      ./images/portfolio/desk/lab-desk@2x.jpg 2x
+                    " media="(min-width: 1200px)">
+
+                  <!-- tablet -->
+                  <source srcset="
+                      ./images/portfolio/tab/lab-tab.jpg    1x,
+                      ./images/portfolio/tab/lab-tab@2x.jpg 2x
+                    " media="(min-width: 768px)">
+
+                  <!-- mob -->
+                  <source srcset="
+                      ./images/portfolio/mob/lab-mob.jpg    1x,
+                      ./images/portfolio/mob/lab-mob@2x.jpg 2x
+                    " media="(max-width: 767px)">
+
+                  <img class="project__img" src="./images/portfolio/tab/lab-tab.jpg" alt="Технокряк">
+
+                </picture>
+
+                <!-- <img srcset="./images/portfolio/lab.jpg 270w, ./images/portfolio/lab-2.jpg 520w"
+                  src="images/portfolio/lab.jpg" alt="Технокряк"> -->
+
+                <p class="gallery__master-text">
+
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+
+                </p>
+              </div>
+              <div class="gallery__text-box">
+
+                <h2 class="gallery__pic-descript">Проект LAB</h2>
+                <p class="gallery__under-pic-descript">Маркетинг</p>
+
+              </div>
+            </a>
+          </li>
+
+
+          <!-- images/portfolio/growing-business.jpg -->
+          <!-- Growing Business -->
+          <!-- Приложение -->
+
+          <li class="gallery__element">
+
+            <a href="" class="gallery__shadow">
+
+              <div class="gallery__top-wrap">
+
+                <picture>
+
+
+                  <!-- desk -->
+                  <source srcset="
+                      ./images/portfolio/desk/growing-business-desk.jpg    1x,
+                      ./images/portfolio/desk/growing-business-desk@2x.jpg 2x
+                    " media="(min-width: 1200px)">
+
+                  <!-- tablet -->
+                  <source srcset="
+                      ./images/portfolio/tab/growing-business-tab.jpg    1x,
+                      ./images/portfolio/tab/growing-business-tab@2x.jpg 2x
+                    " media="(min-width: 768px)">
+
+                  <!-- mob -->
+                  <source srcset="
+                      ./images/portfolio/mob/growing-business-mob.jpg    1x,
+                      ./images/portfolio/mob/growing-business-mob@2x.jpg 2x
+                    " media="(max-width: 767px)">
+
+                  <img class="project__img" src="./images/portfolio/tab/growing-business-tab.jpg" alt="Технокряк">
+
+                </picture>
+
+                <!-- 
+                <img
+                  srcset="./images/portfolio/growing-business.jpg 270w, ./images/portfolio/growing-business-2.jpg 520w"
+                  src="images/portfolio/growing-business.jpg" alt="Технокряк"> -->
+
+                <p class="gallery__master-text">
+
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+
+                </p>
+              </div>
+              <div class="gallery__text-box">
+
+                <h2 class="gallery__pic-descript">Growing Business</h2>
+                <p class="gallery__under-pic-descript">Приложение</p>
+
+              </div>
+            </a>
+          </li>
+
+
+        </ul>
+      </div>
+
+
+    </section>
+  </main>
+
+  <!-- footer -->
+
+  <footer class="footer">
+    <div class="container footer__flex">
+
+      <div class="adress-and-follow">
+
+
+
+
+        <!-- follow -->
+
+        <div class="footer__adress">
+
+          <a class="logo logo-footer " href="#">
+            <span class="logo__accent">Web</span><span class="logo__footer">Studio</span>
+          </a>
+
+          <address class="adress">
+            <ul>
+
+              <li class="adress__conact">
+                <a href="https://goo.gl/maps/R6KZiPnif2T4bkto8" class="adress__link" rel="noopener noreferrer"
+                  target="_blank"> г. Киев,
+                  пр-т Леси Украинки, 26
+                </a>
+              </li>
+
+              <li class="adress__conact">
+                <a class="adress__links" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+
+              <li class="adress__conact">
+                <a class="adress__links" href="tel:+380969999999">
+                  +380 96 999 99 99
+                </a>
+              </li>
+            </ul>
+
+          </address>
+
+        </div>
+
+
+        <!-- follow -->
+
+        <div class="footer-follow">
+
+          <h3 class="footer-follow__text">присоединяйтесь</h3>
+
+          <ul class="soc-list">
+
+
+
+
+            <li class="soc-list__item">
+              <a href="" class="soc-list__link">
+                <svg width="20" height="20" class="soc-list__icon">
+                  <use href="./images/team-contact/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+
+
+
+            <li class="soc-list__item">
+              <a href="" class="soc-list__link">
+                <svg width="20" height="20" class="soc-list__icon">
+                  <use href="./images/team-contact/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+
+            <li class="soc-list__item">
+              <a href="" class="soc-list__link">
+                <svg width="20" height="20" class="soc-list__icon">
+                  <use href="./images/team-contact/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+
+
+            <li class="soc-list__item">
+              <a href="" class="soc-list__link">
+                <svg width="20" height="20" class="soc-list__icon">
+                  <use href="./images/team-contact/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+
+
+      <!-- subscribe -->
+
+      <form class="subscribe">
+
+        <h3 class="subscribe__text">Подпишитесь на рассылку</h3>
+        <div class="subscribe__block">
+
+          <input id="subscribe-email" type="email" class="subscribe__input" name="subscribe-email" required
+            placeholder="E-mail">
+
+          <div class="subscribe__but-cont">
+
+            <button type="submit" class="subscribe__butt">Подписаться
+              <svg width="24" height="24" class="subscribe__icon">
+                <use href="./images/modal/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </footer>
+
+  <!-- backdrop -->
+
+  <div class="backdrop is-hidden" data-modal>
+
+    <div class="model">
+
+      <button type="button" class="model__close-btn" data-modal-close>
+
+        <svg class="btn-close-svg" width="11" height="11">
+          <use href="./images/team-contact/symbol-defs.svg#icon-close"></use>
+        </svg>
+
+      </button>
+
+      <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+
+      <form class="form">
+
+
+        <!-- input -->
+
+        <div class="form__input">
+          <label for="user-name" class="form__label">Имя</label>
+          <input id="user-name" type="text" class="modal__input" required name="user-name">
+
+          <svg class="form__icon" width="18" height="18">
+            <use href="./images/modal/symbol-defs.svg#icon-person"></use>
+          </svg>
+        </div>
+
+        <div class="form__input">
+          <label for="user-tel" class="form__label">Телефон</label>
+          <input id="user-tel" type="tel" class="modal__input" required name="user-tel"
+            pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+          <svg class="form__icon" width="18" height="18">
+            <use href="./images/modal/symbol-defs.svg#icon-phone"></use>
+          </svg>
+        </div>
+
+        <div class="form__input">
+          <label for="user-email" class="form__label">Почта</label>
+          <input id="user-email" type="email" class="modal__input" required name="user-email">
+          <svg class="form__icon" width="18" height="18">
+            <use href="./images/modal/symbol-defs.svg#icon-email"></use>
+          </svg>
+        </div>
+
+
+        <!-- TEXTAREA TEXT AREA-->
+        <label for="user-text" class="form__label">Комментарий</label>
+        <textarea name="user-text" id="user-text" class="form__area" placeholder="Введите текст"></textarea>
+
+
+        <!-- checkbox -->
+        <div class="form__checkbox-label">
+          <input type="checkbox" class="form__checkbox visually-hidden" id="input-check" name="policy" value="policy">
+
+
+          <!-- button -->
+
+
+          <label for="input-check" class="form__checkbox-text"> <span class="form__span">Соглашаюсь с
+              рассылкой и принимаю<a href="" class="form__checkbox-a "> Условия
+                договора</a></span></label>
+
+
+
+        </div>
+
+        <button type="submit" class="form__modal-button">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
+</body>
+
+</html>

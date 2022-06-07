@@ -1,0 +1,37 @@
+// components
+@import "./components/other";
+@import "./components/container";
+
+//layout
+@import "./layout/main/benefits";
+@import "./layout/main/header";
+@import "./layout/main/hero";
+@import "./layout/main/clients";
+@import "./layout/main/team";
+@import "./layout/main/work";
+@import "./layout/main/menu";
+
+@import "./layout/footer/footer";
+// @import "./layout/footer/follow";
+// @import "./layout/footer/subscribe";
+
+@import "./layout/backdrop/button";
+@import "./layout/backdrop/checkbox";
+@import "./layout/backdrop/input";
+@import "./layout/backdrop/textarea";
+
+@import "./layout/portfolio/gallery";
+@import "./layout/portfolio/port-butt";
+
+//utils
+@import "./utils/vars";
+@import "./utils/breakpoints";
+
+//base
+@import "./base/reset";
+@import "./base/common";
+
+//portfolio
+@import "./layout/portfolio/port-butt";
+@import "./layout/portfolio/gallery";
+
